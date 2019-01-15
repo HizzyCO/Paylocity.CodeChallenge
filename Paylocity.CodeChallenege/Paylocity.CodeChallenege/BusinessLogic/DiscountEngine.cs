@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using Paylocity.CodeChallenege.BusinessLogic.Discounts;
+using Paylocity.CodeChallenege.BusinessLogic;
 using Paylocity.CodeChallenege.Configuration;
 using Paylocity.CodeChallenege.Models;
 using System;

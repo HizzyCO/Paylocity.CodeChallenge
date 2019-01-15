@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{C52F75B0-B012-4A6C-A19B-9005CD5C0E86}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Paylocity.CodeChallenege/Program.cs">
+    <Files>
+      <File FileName="Paylocity.CodeChallenege/ClientApp/src/app/app.module.ts" Line="25" Column="27" />
+      <File FileName="Paylocity.CodeChallenege/ClientApp/src/app/cost-calculation/cost-calculation.component.js" Line="1" Column="1" />
+      <File FileName="Paylocity.CodeChallenege/ClientApp/src/app/cost-calculation/cost-calculation.component.ts" Line="11" Column="29" />
+      <File FileName="Paylocity.CodeChallenege/BusinessLogic/DiscountEngine.cs" Line="13" Column="44" />
+      <File FileName="Paylocity.CodeChallenege/Controllers/CostController.cs" Line="19" Column="31" />
+      <File FileName="Paylocity.CodeChallenege/BusinessLogic/IDiscountEngine.cs" Line="10" Column="2" />
+      <File FileName="Paylocity.CodeChallenege/ClientApp/src/app/cost-calculation/cost-calculation.component.html" Line="13" Column="1" />
+      <File FileName="Paylocity.CodeChallenege/Program.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Paylocity.CodeChallenege PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
