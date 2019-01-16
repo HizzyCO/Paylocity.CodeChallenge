@@ -22,7 +22,7 @@ namespace Paylocity.CodeChallenege.BusinessLogic.Discounts
             {
                 if (string.Equals(customerCostModel.Name[0].ToString(), _discountOptions.FirstLetterValue, StringComparison.CurrentCultureIgnoreCase))
                 {                    
-                    customerCostModel.CoverageCost -= (customerCostModel.CoverageCost * _discountOptions.DiscountPercetage);
+                    customerCostModel.CoverageCost -= (customerCostModel.CoverageCost * (_discountOptions.DiscountPercetage/100));
                 }
             }
             

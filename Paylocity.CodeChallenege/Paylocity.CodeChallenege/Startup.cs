@@ -24,6 +24,8 @@ namespace Paylocity.CodeChallenege
         {
             services.Configure<CostOptions>(Configuration.GetSection("CostOptions"));
 
+            services.RegisterDiscountEngine(Configuration);
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);           
 
             // In production, the Angular files will be served from this directory
@@ -59,9 +61,6 @@ namespace Paylocity.CodeChallenege
 
             app.UseSpa(spa =>
             {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
                 spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())

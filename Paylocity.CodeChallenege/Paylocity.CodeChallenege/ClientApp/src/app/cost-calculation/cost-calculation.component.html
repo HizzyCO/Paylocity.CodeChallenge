@@ -1,21 +1,43 @@
 <h1>Enter Customer Name and select type</h1>
-<form>
+<form novalidate (ngSubmit)="onSubmit(f)" #f="ngForm">
   <div class="from-group">
+
     <label for="firstName"> First Name: </label>
-    <input class="form-control" type="text" id="firstName" required>
-  </div>
-  <div class="from-group">
+    <input
+    class="form-control"
+    type="text"
+    id="firstName"
+    placeholder="Customer's First Name"
+    name="firstName"
+    ngModel
+    #firstName="ngModel"
+    maxlength="300"
+    required>
+    <div *ngIf="firstName.errors?.required && firstName.touched" class="error"> First Name Is Required</div>
+
     <label for="lastName"> Last Name:  </label>
-    <input class="form-control" type="text" id="lastName">
-  </div>
-  <div class="form-group">
-    <label for="power">Customer Type</label>
-    <select class="form-control" id="customerType" required>
-      <option *ngFor="let customerType of customerTypes" [value]="customerType.id">{{customerType.Name}}</option>
+    <input input
+    class="form-control"
+    type="text"
+    id="lastName"
+    placeholder="Customer's Last Name"
+    name="lastName"
+    ngModel>
+  
+    <label for="customerType">Customer Type</label>
+    <select class="form-control" id="customerType" name="customerType" ngModel required>
+      <option placeholder="Select Customer Type"
+              *ngFor="let customerType of customerTypes"
+              [value]="customerType.id">{{customerType.name}}</option>
     </select>
   </div>
-
-  <button class="btn-save button primary" > Submit </button>
+  <br>
+  <button class="btn btn-primary" type="submit" [disabled]="f.invalid"> Submit </button>
 
 </form>
+
+<div>
+    {{cost | json}}
+</div>
+
 

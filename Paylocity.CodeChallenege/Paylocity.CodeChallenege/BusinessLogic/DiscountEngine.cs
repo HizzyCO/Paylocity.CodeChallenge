@@ -29,6 +29,7 @@ namespace Paylocity.CodeChallenege.BusinessLogic
 
             var result = new CustomerCostResponse
             {
+                Success = true,
                 CustomerCostModel = new CustomerCostModel
                 {
                     CoverageCost = coverageCost,

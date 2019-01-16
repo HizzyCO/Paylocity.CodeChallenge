@@ -25,7 +25,7 @@ namespace Paylocity.CodeChallenege.Controllers
         [Route("{name}/{customertype}")]
         public async Task<IActionResult> GetCostByName(string name, string customerType)
         {
-            if (customerType != "c" || customerType != "d")
+            if (customerType != "c" && customerType != "d")
             {
                 return StatusCode(400); //Could be a 422 as well
             }
@@ -37,7 +37,7 @@ namespace Paylocity.CodeChallenege.Controllers
                 return StatusCode(500); // Todo: Add more response codes depending on actual fault
             }
 
-            return await Task.FromResult(Ok());
+            return await Task.FromResult(Ok(result.CustomerCostModel));
         }
     }
 }
